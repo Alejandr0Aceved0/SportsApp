@@ -1,90 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Registro">
+
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Registro">
+    android:orientation="vertical">
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@android:color/white"
-        android:gravity="center">
-
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="@android:dimen/thumbnail_width"
-            android:layout_height="@android:dimen/thumbnail_width"
-            android:layout_marginTop="25px"
-            android:layout_gravity="center"
-            android:src="@drawable/logo_sports"/>
-
-        <EditText
-            android:id="@+id/txt_field_Correo"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:hint="Email"
-            android:inputType="textWebEmailAddress" />
-
-        <EditText
-            android:id="@+id/txt_field_Contraseña"
-            android:layout_width="250dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:hint="Clave"
-            android:inputType="textPassword" />
-
-        <Button
-            android:layout_marginTop="30dp"
-            android:id="@+id/btn_Ingresar"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="INGRESAR"
-            android:background="@color/color_sports_azul_rey"
-            android:textColor="@color/color_sports_gris" />
-
-        <Button
-            android:id="@+id/btn_OlvidoPass"
-            android:background="@android:color/white"
-            android:layout_marginTop="10dp"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Olvide la contraseña"
-            android:textColor="@color/color_sports_azul_rey" />
+        android:layout_gravity="center_vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Si no tienes cuenta"
-                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp">
 
-            <Button
-                android:id="@+id/btn_Registrarse"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_sports_azul_rey"
+                    android:textStyle="bold"
+                    android:text="Ingresa tus datos"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@android:color/black"
+                    android:text="Nombres"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/Text_Field_Nombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="Juan"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:text="Apellidos"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/Text_Field_Apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="Juan"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@android:color/black"
+                    android:text="Correo"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/Text_Field_Correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="example@example.com"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@android:color/black"
+                    android:text="Contraseña"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/Text_Field_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="*******"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+
+                    android:textColor="@android:color/black"
+                    android:text="Verificar Contraseña"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/Text_Field_Password2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="*******"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center"
-                android:paddingTop="10dp"
-                android:text="Registrate aquí"
-                android:textColor="@color/color_sports_gris"
-                android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/BTN_Registrarse_usuario"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Registrarse"
+                    android:textColor="@android:color/white"
+                    android:background="@color/color_sports_azul_rey"
+                    />
+
+                <Button
+                    android:id="@+id/BTN_volver"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Volver"
+                    android:textColor="@color/color_sports_azul_rey"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="15dp"/>
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

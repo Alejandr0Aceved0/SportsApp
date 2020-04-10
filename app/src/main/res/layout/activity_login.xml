@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".Registro">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,66 +25,66 @@
             android:src="@drawable/logo_sports"/>
 
         <EditText
-                android:id="@+id/txt_field_Correo"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:hint="Email"
-                android:inputType="textWebEmailAddress" />
+            android:id="@+id/txt_field_Correo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Email"
+            android:inputType="textWebEmailAddress" />
 
-            <EditText
-                android:id="@+id/txt_field_Contraseña"
-                android:layout_width="250dp"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content"
-                android:hint="Clave"
-                android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/txt_field_Contraseña"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="Clave"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_Ingresar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="INGRESAR"
+            android:background="@color/color_sports_azul_rey"
+            android:textColor="@color/color_sports_gris" />
+
+        <Button
+            android:id="@+id/btn_OlvidoPass"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Olvide la contraseña"
+            android:textColor="@color/color_sports_azul_rey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Si no tienes cuenta"
+                android:gravity="center"/>
 
             <Button
-                android:layout_marginTop="30dp"
-                android:id="@+id/btn_Ingresar"
-                android:layout_width="250dp"
+                android:id="@+id/btn_Registrarse"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="INGRESAR"
-                android:background="@color/color_sports_azul_rey"
-                android:textColor="@color/color_sports_gris" />
-
-            <Button
-                android:id="@+id/btn_OlvidoPass"
-                android:background="@android:color/white"
-                android:layout_marginTop="10dp"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Olvide la contraseña"
-                android:textColor="@color/color_sports_azul_rey" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Si no tienes cuenta"
-                    android:gravity="center"/>
-
-                <Button
-                    android:id="@+id/btn_Registrarse"
-                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center"
-                    android:paddingTop="10dp"
-                    android:text="Registrate aquí"
-                    android:textColor="@color/color_sports_gris"
-                    android:textSize="10dp"
-                    android:textStyle="bold"/>
-            </LinearLayout>
+                android:layout_gravity="center_horizontal|center"
+                android:paddingTop="10dp"
+                android:text="Registrate aquí"
+                android:textColor="@color/color_sports_gris"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
         </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
