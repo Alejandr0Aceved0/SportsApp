@@ -10,6 +10,7 @@
 
 
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="45dp"
@@ -32,7 +33,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:padding="12dp"
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:gravity="center">
@@ -47,19 +48,20 @@
 
                 <Button
                     android:id="@+id/btn_Ingresar_icn_basket"
-                    android:layout_width="250dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:text="INGRESAR"
-                    android:background="@color/color_sports_azul_rey"
-                    android:textColor="@color/color_sports_gris" />
+                    android:background="@drawable/estilo_boton_borde_redondo_naranja"
+                    android:textColor="@color/color_sports_azul_rey" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:padding="12dp"
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:gravity="center">
@@ -74,19 +76,20 @@
 
                 <Button
                     android:id="@+id/btn_Ingresar_ic_soccer"
-                    android:layout_width="250dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:text="INGRESAR"
-                    android:background="@color/color_sports_azul_rey"
-                    android:textColor="@color/color_sports_gris" />
+                    android:background="@drawable/estilo_boton_borde_redondo_naranja"
+                    android:textColor="@color/color_sports_azul_rey" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:padding="12dp"
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:gravity="center">
@@ -101,19 +104,20 @@
 
                 <Button
                     android:id="@+id/btn_Ingresar_icn_baseball"
-                    android:layout_width="250dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:text="INGRESAR"
-                    android:background="@color/color_sports_azul_rey"
-                    android:textColor="@color/color_sports_gris" />
+                    android:background="@drawable/estilo_boton_borde_redondo_naranja"
+                    android:textColor="@color/color_sports_azul_rey" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:padding="12dp"
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:gravity="center">
@@ -128,19 +132,20 @@
 
                 <Button
                     android:id="@+id/btn_Ingresar_icn_tennis"
-                    android:layout_width="250dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:text="INGRESAR"
-                    android:background="@color/color_sports_azul_rey"
-                    android:textColor="@color/color_sports_gris" />
+                    android:background="@drawable/estilo_boton_borde_redondo_naranja"
+                    android:textColor="@color/color_sports_azul_rey" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:padding="12dp"
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:gravity="center">
@@ -155,19 +160,20 @@
 
                 <Button
                     android:id="@+id/btn_Ingresar_icn_rugby"
-                    android:layout_width="250dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:text="INGRESAR"
-                    android:background="@color/color_sports_azul_rey"
-                    android:textColor="@color/color_sports_gris" />
+                    android:background="@drawable/estilo_boton_borde_redondo_naranja"
+                    android:textColor="@color/color_sports_azul_rey" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:padding="12dp"
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:gravity="center">
@@ -182,19 +188,20 @@
 
                 <Button
                     android:id="@+id/btn_Ingresar_Basketball"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="180dp"
+                    android:layout_height="39dp"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/estilo_boton_borde_redondo_naranja"
                     android:text="INGRESAR"
-                    android:background="@color/color_sports_azul_rey"
-                    android:textColor="@color/color_sports_gris" />
+                    android:textColor="@color/color_sports_azul_rey" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:padding="12dp"
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:gravity="center">
@@ -209,18 +216,17 @@
 
                 <Button
                     android:id="@+id/btn_Ingresar_icn_volley"
-                    android:layout_width="250dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:text="INGRESAR"
-                    android:background="@color/color_sports_azul_rey"
-                    android:textColor="@color/color_sports_gris" />
+                    android:background="@drawable/estilo_boton_borde_redondo_naranja"
+                    android:textColor="@color/color_sports_azul_rey" />
 
             </LinearLayout>
 
-
         </LinearLayout>
-
 
     </ScrollView>
     
