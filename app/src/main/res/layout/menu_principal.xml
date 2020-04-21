@@ -1,18 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MenuPrincipal">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="45dp"
+        android:text="Selecciona tu deporte"
+        android:textStyle="bold"
+        android:textColor="@color/color_sports_azul_rey"
+        android:gravity="center">
+    </TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/icn_basket"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icn_basket"/>
+
+                <Button
+                    android:id="@+id/btn_Ingresar_icn_basket"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="INGRESAR"
+                    android:background="@color/color_sports_azul_rey"
+                    android:textColor="@color/color_sports_gris" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/ic_soccer"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icn_soccer"/>
+
+                <Button
+                    android:id="@+id/btn_Ingresar_ic_soccer"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="INGRESAR"
+                    android:background="@color/color_sports_azul_rey"
+                    android:textColor="@color/color_sports_gris" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/icn_baseball"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icn_baseball"/>
+
+                <Button
+                    android:id="@+id/btn_Ingresar_icn_baseball"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="INGRESAR"
+                    android:background="@color/color_sports_azul_rey"
+                    android:textColor="@color/color_sports_gris" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/icn_tennis"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icn_tennis"/>
+
+                <Button
+                    android:id="@+id/btn_Ingresar_icn_tennis"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="INGRESAR"
+                    android:background="@color/color_sports_azul_rey"
+                    android:textColor="@color/color_sports_gris" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/icn_rugby"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icn_rugby"/>
+
+                <Button
+                    android:id="@+id/btn_Ingresar_icn_rugby"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="INGRESAR"
+                    android:background="@color/color_sports_azul_rey"
+                    android:textColor="@color/color_sports_gris" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/icn_runner"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icn_runner"/>
+
+                <Button
+                    android:id="@+id/btn_Ingresar_Basketball"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="INGRESAR"
+                    android:background="@color/color_sports_azul_rey"
+                    android:textColor="@color/color_sports_gris" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/icn_volley"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icn_volley"/>
+
+                <Button
+                    android:id="@+id/btn_Ingresar_icn_volley"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="INGRESAR"
+                    android:background="@color/color_sports_azul_rey"
+                    android:textColor="@color/color_sports_gris" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    
+</LinearLayout>
