@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_logo_sports_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SeccionAtletismo"></activity>
+        <activity android:name=".SeccionVolley" />
+        <activity android:name=".SeccionTennis" />
+        <activity android:name=".SeccionRugby" />
+        <activity android:name=".SeccionBasket" />
+        <activity android:name=".SeccionBaseball" />
+        <activity android:name=".SeccionSoccer" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme">

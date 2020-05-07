@@ -85,11 +85,11 @@ public class Login extends AppCompatActivity {
         };
 
 
-        mCorreo= (EditText) findViewById(R.id.txt_field_Correo);
-        mContraseña=(EditText) findViewById(R.id.txt_field_Contraseña);
-        mIngresar=(Button) findViewById(R.id.btn_Ingresar);
-        mRegistrarse=(Button)findViewById(R.id.btn_Registrarse);
-        Olvide_Contraseña=(Button)findViewById(R.id.btn_OlvidoPass);
+        mCorreo             = (EditText) findViewById(R.id.txt_field_Correo);
+        mContraseña         =(EditText) findViewById(R.id.txt_field_Contraseña);
+        mIngresar           =(Button) findViewById(R.id.btn_Ingresar);
+        mRegistrarse        =(Button)findViewById(R.id.btn_Registrarse);
+        Olvide_Contraseña   =(Button)findViewById(R.id.btn_OlvidoPass);
 
         mRegistrarse.setOnClickListener(new View.OnClickListener() {
             @Override

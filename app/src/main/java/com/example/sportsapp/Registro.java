@@ -52,13 +52,13 @@ public class Registro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
-        mNombresClienteRegistro = (EditText) findViewById(R.id.Text_Field_Nombres);
-        mApellidosClienteRegistro = (EditText) findViewById(R.id.Text_Field_Apellidos);
-        mEmailClienteRegistro = (EditText) findViewById(R.id.Text_Field_Correo);
-        mContraseñaClienteRegistro = (EditText) findViewById(R.id.Text_Field_Password);
+        mNombresClienteRegistro     = (EditText) findViewById(R.id.Text_Field_Nombres);
+        mApellidosClienteRegistro   = (EditText) findViewById(R.id.Text_Field_Apellidos);
+        mEmailClienteRegistro       = (EditText) findViewById(R.id.Text_Field_Correo);
+        mContraseñaClienteRegistro  = (EditText) findViewById(R.id.Text_Field_Password);
         mContraseñaClienteRegistroV = (EditText) findViewById(R.id.Text_Field_Password2);
-        mRegistroCliente = (Button) findViewById(R.id.BTN_Registrarse_usuario);
-        mCerrarRegistroCliente = (Button) findViewById(R.id.BTN_volver);
+        mRegistroCliente            = (Button) findViewById(R.id.BTN_Registrarse_usuario);
+        mCerrarRegistroCliente      = (Button) findViewById(R.id.BTN_volver);
 
         mAuth = FirebaseAuth.getInstance();
 

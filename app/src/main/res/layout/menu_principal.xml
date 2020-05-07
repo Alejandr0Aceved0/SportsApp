@@ -187,7 +187,7 @@
                     android:src="@drawable/icn_runner"/>
 
                 <Button
-                    android:id="@+id/btn_Ingresar_Basketball"
+                    android:id="@+id/btn_Ingresar_icn_runner"
                     android:layout_width="180dp"
                     android:layout_height="39dp"
                     android:layout_gravity="center"
